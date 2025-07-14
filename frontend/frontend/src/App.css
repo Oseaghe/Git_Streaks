@@ -1,0 +1,27 @@
+.App {
+  max-width: 600px;
+  margin: auto;
+  padding: 32px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #1f8ef1;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.results {
+  margin-top: 24px;
+}

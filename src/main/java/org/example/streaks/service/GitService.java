@@ -1,8 +1,10 @@
 package org.example.streaks.service;
 
 import org.example.streaks.dto.StreakResponse;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
+import io.github.cdimascio.dotenv.Dotenv;
 
 import java.time.LocalDate;
 import java.time.ZoneOffset;
@@ -10,9 +12,10 @@ import java.util.*;
 
 @Service
 public class GitService {
+    Dotenv dotenv = Dotenv.load();
+    String TOKEN = dotenv.get("GIT_TOKEN");
 
     private final String GITHUB_API_URL = "https://api.github.com/graphql";
-    private final String TOKEN = "Bearer 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";
 
     private final WebClient webClient = WebClient.builder()
             .baseUrl(GITHUB_API_URL)

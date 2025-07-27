@@ -11,7 +11,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/streaks")
 public class GitController {
-
     @Autowired
     private GitService gitService;
 

@@ -1,0 +1,48 @@
+{
+  "name": "git-streak-tracker",
+  "version": "1.0.0",
+  "description": "Professional GitHub Streak Tracker Frontend",
+  "main": "index.js",
+  "homepage": "./",
+  "proxy": "http://localhost:8080",
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "test": "jest",
+    "lint": "eslint src/**/*.{js,jsx}"
+  },
+  "keywords": [
+    "github",
+    "streak",
+    "tracker",
+    "react"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "framer-motion": "^10.18.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^6.23.0",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@babel/plugin-transform-object-rest-spread": "^7.28.0",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "babel-jest": "^30.0.0-beta.3",
+    "babel-loader": "^10.0.0",
+    "css-loader": "^7.1.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "postcss-import": "^16.1.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  }
+}

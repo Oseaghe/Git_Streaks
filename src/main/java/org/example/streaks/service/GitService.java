@@ -13,7 +13,7 @@ import java.util.*;
 @Service
 public class GitService {
     Dotenv dotenv = Dotenv.load();
-    String TOKEN = dotenv.get("GIT_TOKEN");
+    @Value("${GIT_TOKEN}") String TOKEN;
 
     private final String GITHUB_API_URL = "https://api.github.com/graphql";
 

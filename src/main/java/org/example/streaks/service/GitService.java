@@ -12,15 +12,15 @@ import java.util.*;
 
 @Service
 public class GitService {
-    Dotenv dotenv = Dotenv.load();
-    @Value("${GIT_TOKEN}") String TOKEN;
-
+    private final WebClient webClient;
     private final String GITHUB_API_URL = "https://api.github.com/graphql";
 
-    private final WebClient webClient = WebClient.builder()
-            .baseUrl(GITHUB_API_URL)
-            .defaultHeader("Authorization", TOKEN)
-            .build();
+    public GitService(@Value("${GIT_TOKEN}") String TOKEN) {
+        this.webClient = WebClient.builder()
+                .baseUrl(GITHUB_API_URL)
+                .defaultHeader("Authorization", "Bearer "+ TOKEN)
+                .build();
+    }
 
     public List<StreakResponse> getStreaks(List<String> usernames) {
         List<StreakResponse> results = new ArrayList<>();

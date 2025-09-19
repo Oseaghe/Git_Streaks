@@ -27,7 +27,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # -------- Stage 2: Run the JAR --------
-FROM amazoncorretto:24-alpine
+FROM amazoncorretto:21-alpine
 WORKDIR /app
 
 # Copy only the JAR file from the build stage

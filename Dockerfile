@@ -15,7 +15,7 @@
 #ENTRYPOINT ["java", "-jar", "app.jar"]
 
 # -------- Stage 1: Build the JAR --------
-FROM maven:3.9.4-eclipse-temurin-17 AS build
+FROM maven:3.9.4-eclipse-temurin-21 AS build
 WORKDIR /app
 
 # Copy pom.xml and download dependencies first (cache-friendly)

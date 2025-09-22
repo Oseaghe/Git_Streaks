@@ -4,7 +4,7 @@
   "description": "Professional GitHub Streak Tracker Frontend",
   "main": "index.js",
   "homepage": "./",
-  "proxy": "http://localhost:8080",
+  "proxy": "https://github-streaks-txx3.onrender.com",
   "scripts": {
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",

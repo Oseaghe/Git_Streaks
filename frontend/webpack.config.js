@@ -16,7 +16,7 @@ module.exports = {
     proxy: [
       {
         context: ['/api'],
-        target: 'http://localhost:8080',
+        target: 'https://github-streaks-txx3.onrender.com',
       }
     ]
   },

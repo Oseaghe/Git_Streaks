@@ -4,7 +4,7 @@ module.exports = {
   mode: 'development', // or 'production' or 'none'
   entry: './src/index.js', // Your main entry point
   output: {
-    path: path.resolve(__dirname, 'public'), // Output directory
+    path: path.resolve(__dirname, 'dist'), // Output directory
     filename: 'app.js', // Output filename to match HTML
   },
   devServer: {
